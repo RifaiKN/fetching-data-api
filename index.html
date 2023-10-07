@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 Alpro 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        #hasilFetchdata {
+            max-width: 1200px; /* Lebar maksimum tabel */
+            max-height: 1200px;
+            overflow-x: auto; /* Pengguliran horizontal */
+            overflow-y: auto; /* Pengguliran vertikal */
+        }
+        th {
+        background: rgb(58, 58, 58);
+        position: sticky;
+        top: 0;
+        } 
+    </style>
+</head>
+
+<body class="bg-dark text-light">
+    <div class="container mt-5">
+        <h1 class="mb-5 text-center">Tugas Fetch API</h1>
+        <div class="input-group mb-3">
+            <input type="text" id="urlInput" class="form-control" placeholder="Masukkan URL">
+            <div class="input-group-append">
+                <button id="buttonSubmit" class="btn btn-primary">Ambil Data</button>
+            </div>
+        </div>
+        <div id="hasilFetchdata" class="table table-responsive table-dark"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
