@@ -13,7 +13,7 @@ document.getElementById("buttonSubmit").addEventListener("click", function() {
         if (xhr.status === 200) {
             const data = JSON.parse(xhr.responseText);
             const table = document.createElement("table");
-            table.className = "table table-responsive table-dark table-bordered table-striped";
+            table.className = "table table-dark table-bordered table-striped";
 
             // Membuat header tabel
             const tableHead = document.createElement("thead");
