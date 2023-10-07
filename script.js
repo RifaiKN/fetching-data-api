@@ -2,13 +2,10 @@ document.getElementById("buttonSubmit").addEventListener("click", function() {
     const urlInput = document.getElementById("urlInput").value;
     const hasilFetchdata = document.getElementById("hasilFetchdata");
 
-    // Membuat objek XMLHttpRequest
     const xhr = new XMLHttpRequest();
 
-    // Menggunakan metode GET untuk mengambil data dari URL
     xhr.open("GET", urlInput, true);
 
-    // Mengatur callback untuk menangani respons
     xhr.onload = function() {
         if (xhr.status === 200) {
             const data = JSON.parse(xhr.responseText);
